@@ -1,0 +1,66 @@
+/* Variables */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+$logo-font: 'Noto Sans SC', sans-serif;
+$logo-f: #000000;
+$logo-s: #0000e8;
+$btn-colour: #FFFFFF;
+
+* {
+  box-sizing: border-box;
+}
+.App {
+  .logo {
+    display: block;
+    font-size: 70px;
+    font-family: $logo-font;
+    margin-top: 80px;
+    text-align: center;
+    .f {
+      color: $logo-f;
+    }
+    .s {
+      color: $logo-s;
+    }
+  }
+  .search-box {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    .query {
+      width: 80%;
+      outline: none;
+      font-size: 35px;
+      float: left;
+    }
+    .submit {
+      width: 20%;
+      background-color: $logo-s;
+      border: none;
+      color: $btn-colour;
+      opacity: 0.5;
+    }
+    .submit.active {
+      opacity: 1;
+    }
+    .submit.active:hover {
+      cursor: pointer;
+    }
+    .query,
+    .submit {
+      height: 50px;
+    }
+  }
+  .results {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
